@@ -1,2 +1,2 @@
 # go-cli-gitContributions
-Command-Line Interface showcasing local git contributions in Go.
+Command-Line Interface showcasing local git contributions in Go following tutorial by [flaviocopes.com](https://flaviocopes.com/go-git-contributions/) developed in Windows env.
