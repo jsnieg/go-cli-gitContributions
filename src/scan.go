@@ -1,3 +1,5 @@
+package main
+
 // this automatically updates upon writing code, pwetty cool...
 // i said pwetty and not pretty cause i can't pronounce R's!
 import (
