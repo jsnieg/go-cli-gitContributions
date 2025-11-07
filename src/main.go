@@ -1,15 +1,6 @@
 package main
 
-// this automatically updates upon writing code, pwetty cool...
-// i said pwetty and not pretty cause i can't pronounce R's!
-import (
-	"flag"
-)
-
-// stats generates a graph of your Git contributions
-func stats(email string) {
-	print("stats")
-}
+import "flag"
 
 // main called function
 func main() {
