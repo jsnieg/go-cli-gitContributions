@@ -4,11 +4,12 @@ package main
 // i said pwetty and not pretty cause i can't pronounce R's!
 import (
 	"bufio"
-	"flag"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"log"
 	"os"
+	"os/user"
 	"strings"
 )
 
@@ -95,7 +96,7 @@ func joinSlices(new []string, existing []string) []string {
 func dumpStringsSliceToFile(repos []string, filePath string) {
 	content := strings.Join(repos, "\n")
 	// function deprecated as of Go 1.16 [refactoring needed]
-	ioutil.WriteFile(filePath, []byte(content), 0755) 
+	ioutil.WriteFile(filePath, []byte(content), 0755)
 }
 
 // addNewSliceElementsToFile given a slice of strings representing paths stores them
@@ -156,7 +157,7 @@ func scanGitFolders(folders []string, folder string) []string {
 
 			// explicitly avoid folders that may persist of large data
 			// for this purpose these are useless
-			if file.Name() == "vendor" || file.Name() = "node_modules" {
+			if file.Name() == "vendor" || file.Name() == "node_modules" {
 				continue
 			}
 
