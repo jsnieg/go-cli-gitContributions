@@ -1,3 +1,6 @@
+// broken, i need to research more into go install
+// how go handles packages
+// and how to run this bloody thing...
 package main
 
 import "flag"
